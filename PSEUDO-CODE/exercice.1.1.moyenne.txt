@@ -1,0 +1,13 @@
+variable :
+	nombre 1 est un entier
+	nombre 2 est un entier
+	resultat nombre réel
+début programme :
+	Ecrire "saisir le nombre 1"
+	Lire <-- nombre 1
+	Ecrire "saisir le nombre 1"
+	Lire <-- nombre 2
+	Ecrire "saisir le nombre 2"
+	Resultat <--( nombre 1 + nombre 2) / 2
+	Ecrire "le résultat est : ",resultat
+fin de programme 

@@ -1,0 +1,17 @@
+variables
+    somme est un reel
+    interet est un reel
+    annees est un entier
+    interet simple est un reel
+    interet compose est un reel
+debut du programme
+    ecrire "entrer la somme"
+    Lire <-- somme  
+    ecrire "entrer les interets" 
+    Lire <-- interets 
+    ecrire "entrer les annees" 
+    Lire <-- annees
+    interet simple < -- Somme(1+annees*interets)
+    interet compose < -- Somme(1+interets)*annees
+    ecrire "interet simple",interet simple,"interet compose",interet compose
+fin du programme    

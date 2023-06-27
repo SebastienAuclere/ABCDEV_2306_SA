@@ -1,0 +1,11 @@
+variable:
+    R est un nombre réel
+    Aire est un réel
+    Volume est un réel
+debut programme
+    Ecrire "Saisissez le rayon de la sphère:"
+    Lire <-- R    
+    Aire <--4*pi*R^2
+    Volume <-- (4/3)*pi*R^3
+    Ecrire "l'Aire et le Volume de la sphère sont :",Aire,"et",Volume
+fin de programme    

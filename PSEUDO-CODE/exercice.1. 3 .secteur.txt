@@ -1,0 +1,15 @@
+variable :
+	Rayon est un réel
+	Angle est un réel
+	Aire est un réel
+constante :
+	pi est un réel
+Début du programme :
+	Ecrire  "saisir le rayon"
+	Lire <--rayon
+	Ecrire  "saisir l'angle"
+	Lire <--angle
+	Aire <--(pi*R^2*A)/360
+	Ecrire "par un rayon de",rayon,"et un angle A",angle,"L'aire du secteur circulaire est de: ",Aire du secteur circulaire
+fin du programme
+

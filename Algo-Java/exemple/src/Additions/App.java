@@ -1,11 +1,9 @@
-package abcdev_jalon;
+package Additions;
 
 public class App {
 
 	public static void main(String[] args) {
-		 
-		 //variables
-		
+		// TODO Auto-generated method stub
 
 	}
 

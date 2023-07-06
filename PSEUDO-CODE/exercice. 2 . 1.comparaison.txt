@@ -1,0 +1,2 @@
+int a est un entier;
+int b est un entier;

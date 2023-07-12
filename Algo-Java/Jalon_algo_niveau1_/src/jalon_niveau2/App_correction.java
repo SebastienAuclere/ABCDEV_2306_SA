@@ -1,8 +1,9 @@
 package jalon_niveau2;
 
 import java.util.Scanner;
+
 /*
-Variables
+ Variables
 	estTilEtudiant est une chaine de caractères
 	etudiant est un booleen
 	jourDelaSemaine est un entier
@@ -29,9 +30,9 @@ Debut du programme
 		Ecrire "Vous n'avez droit à aucune reduction"
 	Fin Si
 Fin du programme
-*/
+ */
 
-public class App {
+public class App_correction{
 
 	public static void main(String[] args) {
 		// declaration des variables
@@ -55,18 +56,6 @@ public class App {
 		{
 			System.out.println("Quel jour de la semaine : \n1 Lundi 2 Mardi 3 Mercredi \n4 jeudi 5 Vendredi 6 Samedi");
 			jourDeLaSemaine = sc.nextInt();
-			switch(jourDeLaSemaine)
-			{
-			case 3:
-				System.out.println("Vous avez droit à une reduction de 50%");
-				break;
-			case 4:
-				System.out.println("Vous avez droit à une reduction de 20%");
-				break;
-			default :
-				System.out.println("Vous n'avez pas droit à une reduction");
-			}
-			/*
 			if(jourDeLaSemaine == 3)
 			{
 				System.out.println("Vous avez droit à une reduction de 50%");
@@ -78,7 +67,7 @@ public class App {
 			else
 			{
 				System.out.println("Vous n'avez pas droit à une reduction");
-			}*/
+			}
 		}
 		else
 		{
@@ -87,6 +76,6 @@ public class App {
 		
 		sc.close();
 
-}
+	}
 
 }

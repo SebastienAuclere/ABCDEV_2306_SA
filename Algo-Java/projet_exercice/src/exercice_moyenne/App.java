@@ -4,9 +4,7 @@ import java.util.Scanner;
 
 public class App {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-					
+	public static void main(String[] args) {							
 			// declaration des variables
 			int nombre1;
 			int nombre2;
@@ -21,7 +19,7 @@ public class App {
 			System.out.println("Saisir le deuxieme nombre : ");
 			nombre2 = sc.nextInt();
 			moyenne = (nombre1 + nombre2)/2d;
-			System.out.println("La moyenne des deux nombres est : "+moyenne);
+			System.out.println("La moyenne des deux nombres est : "+moyenne); 
 			
 			sc.close();
 	}

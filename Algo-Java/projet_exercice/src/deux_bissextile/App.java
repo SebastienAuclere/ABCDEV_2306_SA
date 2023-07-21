@@ -31,7 +31,7 @@ public class App {
 		annee = sc.nextInt();
 		
 		//debut du si
-		if (annee%4 == 0 && annee%100 !=0 ||annee%400 == 0)
+		if (annee%4 == 0 && annee%100 !=0 || annee%400 == 0)
 		{
 			System.out.println("L'annee"+annee+"est bissextile ");	
 		}

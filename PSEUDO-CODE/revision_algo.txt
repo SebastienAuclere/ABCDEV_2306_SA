@@ -1,0 +1,107 @@
+EXERCICE 1_1
+
+Variables 
+	nombre1 est un entier
+	nombre2 est un entier
+	moyenne est un reel double
+Debut du programme
+	Ecrire "saisir le 1er nombre"
+	Lire nombre1
+	Ecrire "Saisir le 2ème nombre"
+	Lire nombre2
+	moyenne <-- (nombre1 + nombre2)/2
+	Ecrire "La moyenne est : ",moyenne
+Fin du programme
+
+Exercice 1_2
+
+Variables
+	rayon est un entier
+	aire est un reel double
+	volume est un reel double
+Constantes
+	pi est un reel double
+Debut du programme
+	Ecrire "Saisir le rayon"
+	Lire rayon
+	pi <-- 3.1415
+	aire <-- 4*pi*rayon^2
+	volume <-- 4/3*pi*rayon^3
+	Ecrire "L'aire est : ",aire," Le volume est : ",volume
+Fin du programme
+
+Exercice 2_1
+
+Variables
+	age est un entier
+	majeur est une chaine de caractere
+	mineur est une chaine de caractère
+	pasNe est une chaine de caractère
+Debut du programme
+	majeur <-- "Vous etes majeur"
+	mineur <-- "Vous etes mineur"
+	pasNe <-- "Vous n'etes pas encore ne"
+	Ecrire "saisir votre age"
+	Lire age
+	Debut Si
+		Si age < 0
+		Alors Ecrire pasNe
+		Sinon Si age  < 18
+		Alors Ecrire mineur
+		Sinon
+		Ecrire majeur
+	Fin Si
+Fin du programme
+
+Exercice 2_2
+
+Variables
+	nombreA est un entier
+	nombreB est un entier
+Debut du programme
+	Ecrire "saisir le 1er nombre"
+	Lire nombreA
+	Ecrire "saisir le 2eme nombre"
+	Lire nombreB
+	Debut Si
+		Si nombreA = nombreB
+		Alors Ecrire "nombreA et nombreB sont égaux"
+		Sinon Si nombreA > nombreB
+		Alors Ecrire nombreB," "nombreA
+		Sinon Ecrire nombreA," "nombreB
+	Fin Si
+Fin du programme
+	
+Exercice 3 avec une boucle tant que
+
+Variables
+	nombre est un entier
+	i est un entier
+Debut du programme
+	i <-- 1
+	Ecrire "Saisir un nombre"
+	Lire nombre
+Debut tant que
+	tant que i <= 10
+	Faire
+	nombre <-- nombre + 1
+	Ecrire nombre," "
+	i <-- i + 1
+Fin tant que
+Fin du programme
+
+Exerice 3 avec une boucle pour 
+
+Variables
+	nombre est un entier
+	i est un entier
+Debut du programme
+	Ecrire "Saisir un nombre"
+	Lire nombre
+Debut pour
+	pour i allant de 1 à 10
+	nombre <-- nombre + 1
+	Ecrire nombre," "
+	i suivant
+fin pour
+fin du programme

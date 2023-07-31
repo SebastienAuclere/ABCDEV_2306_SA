@@ -1,0 +1,12 @@
+VARIABLE
+    Nombre1 est un entier
+    Nombre2 est un entier
+    Resultat est un entier
+Debut programme
+    Ecrire "Saisir le 1er nombre"
+    Lire <-- Nombre1
+    Ecrire "Saisir le 2ème nombre"
+    Lire <-- Nombre2
+    Resultat <-- Nombre1 + Nombre2
+    Ecrire "le résultat de l'addition de ",Nombre1, " et ",Nombre2, " est égale à ", Resultat
+Fin programme

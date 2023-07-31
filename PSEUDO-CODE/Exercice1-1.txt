@@ -1,0 +1,13 @@
+VARIABLE
+    Nombre1 est un entier
+    Nombre2 est un entier
+    Moyenne est un reel
+Debut du programme
+    Ecrire "Saisir le 1er nombre"
+    Lire <-- Nombre1
+    Ecrire "Saisir le 2eme nombre"
+    Lire <-- Nombre2
+    Moyenne <-- (Nombre1+Nombre2)/2
+    Ecrire "La moyenne de ",Nombre1," et ",Nombre2," est ",Moyenne
+Fin du programme
+

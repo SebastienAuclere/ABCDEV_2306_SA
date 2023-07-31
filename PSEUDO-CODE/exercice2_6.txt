@@ -1,0 +1,22 @@
+Variables
+	nombre est un entier
+	i est un entier
+	est_premier est un booleen
+Debut du programme
+	est_premier <-- vrai
+	ecrire "Saisir un nombre"
+	lire nombre
+	Debut boucle pour
+		Pour i allant de 2 à nombre - 1
+		debut Si
+			Si nombre%i = 0 
+			Alors 
+			est_premier <-- faux
+		Fin Si
+	Fin pour
+
+	debut si
+		si est_premier = vrai
+		alors ecrire "nombre ",nombre" est un nombre premier"
+		sinon ecrire "nombre ",nombre" n'est pas un nombre premier"
+	

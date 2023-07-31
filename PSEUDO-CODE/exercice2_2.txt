@@ -1,0 +1,23 @@
+PSEUDO CODE Exercice 2-2
+
+Variables
+a est un entier
+b est un entier
+
+Début du programme
+
+Ecrire "Saisir nombre a"
+Lire <-- nombre a
+Ecrire "Saisir nombre b"
+Lire <-- nombre b
+
+Début Si
+Si a == b 
+Ecrire" Nombre :" a " = " b
+Sinon Si a < b
+Ecrire " Nombre :" a , b
+Sinon 
+Ecrire " Nombre :" b , a
+Fin Si
+Fin du programme
+

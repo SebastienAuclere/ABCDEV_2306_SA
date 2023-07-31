@@ -21,26 +21,23 @@ public class App {
 		nbPrecedent = 0;
 		nbCourant = 1;
 		
-		if (nb>2); 
+		if (nb > 2)
 		{
-			  while  ( position < nb );
-			    {			 
+			  while  ( position < nb )
+			  {			 
 			 
 				  nbSuivant = nbPrecedent + nbCourant;
 				  resultat = resultat + "\n\t" + nbSuivant;
 				  nbPrecedent = nbCourant;
 				  nbCourant = nbSuivant;
 				  position = position + 1;
-				}
-		   
-			  do 
-			   {
-				  nb = 2;		
-				  
-			   }
-	  else if
-			  System.out.println("les " + nb + "premiers nombres de la suite fibonacci sont \n " + resultat );
+			  }  
 		}
+	    else
+	    {
+	          nb = 2;			  
+		}
+		System.out.println("les " + nb + "premiers nombres de la suite fibonacci sont \n " + resultat );
 		sc.close();
 	}
 }

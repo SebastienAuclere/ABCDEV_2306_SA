@@ -1,0 +1,17 @@
+VARIABLE
+    Somme est un reel
+    Interet est un reel
+    Annees est un entier
+    ISimple est un reel
+    IComposer est un reel
+Debut du programme
+    Ecrire "Saisir la somme"
+    Lire <-- Somme
+    Ecrire "Saisir l'Interet"
+    Lire <-- Interet
+    Ecrire "Saisir le nombre d'annees"
+    Lire <-- Annees
+    ISimple <-- Somme * (1 + Annees * Interet)
+    IComposer <-- Somme * (1 + Interet)^Annees
+    Ecrire "L'interet simple est ", ISimple " et l'interet composer est ",IComposer
+Fin du programme

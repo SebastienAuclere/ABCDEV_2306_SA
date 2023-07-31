@@ -1,0 +1,39 @@
+Variables
+	i est un entier
+	nombre est un entier
+	resultat est un entier
+	fermeture_prog est un booleen
+	saisie_utilisateur est une chaine de caractere
+	saisieValide est un booleen
+Debut de programme
+	Debut faire tant que
+		Faire
+		Ecrire "Saisir un nombre de 1 à 10"
+		Lire nombre
+	debut si
+		si nombre >= 1 ET <= 10
+		saisieValide <-- vrai
+	Debut pour
+		pour i allant de 0 à 10
+		resultat <-- i * nombre
+		Ecrire i," * ",nombre," = ",resultat
+	Fin pour
+		debut faire tant que
+			faire
+			Ecrire "Souhaitez vous afficher une autre table ? Oui(O) ou Non(N)"
+			Lire saisie_utilisateur
+		Debut Si
+			Si saisie_utilisateur egale "N"
+			Alors fermeture_prog = vrai
+			saisieValide = vrai
+			Sinon Si saisie_utilisateur egale "O"
+			Alors fermeture_prog = faux
+			saisieValide = vrai
+			Sinon saisieValide = faux
+		Fin Si
+			tant que saisieValide est faux
+		fin faire tant que
+	fin si
+		tant que fermeture_prog est faux
+	fin faire tant que
+fin du programme

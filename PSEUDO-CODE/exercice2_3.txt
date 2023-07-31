@@ -1,0 +1,41 @@
+Declaration
+  Double NombreA
+  Double NombreB
+  Double NombreC
+
+Debut Programme
+  Ecrire "Entrez la valeur du nombre A : "
+  Lire NombreA
+  Ecrire "Entrez la valeur du nombre B : "
+  Lire NombreB
+  Ecrire "Entrez la valeur du nombre C : "
+  Lire NombreC
+  Debut Si
+    Si NombreA <= NombreB ET NombreA <= NombreC
+      Alors :
+        Debut Si
+          Si NombreB <= NombreC
+            Alors :
+              Ecrire NombreA <= NombreB <= NombreC
+            Sinon :
+              Ecrire NombreA <= NombreC <= NombreB
+        Fin Si
+    Sinon Si NombreB <= NombreA ET NombreB <= NombreC
+      Alors :
+        Debut Si
+          Si NombreA <= NombreC
+            Alors :
+              Ecrire NombreB <= NombreA <= NombreC
+            Sinon :
+              Ecrire NombreB <= NombreC <= NombreA
+        Fin Si
+    Sinon :
+      Debut Si
+        Si NombreA <= NombreB
+          Alors :
+            Ecrire NombreC <= NombreA <= NombreB
+          Sinon :
+            Ecrire NombreC <= NombreB <= NombreA
+        Fin Si
+  Fin Si
+Fin Programme

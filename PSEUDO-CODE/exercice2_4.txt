@@ -1,0 +1,15 @@
+Variables 
+	annee est un entier
+
+debut du programme
+	ecrire "l'annee"
+	<-- lire annee
+
+Debut du si
+ si a/4 et non par 100 ou /400
+alors
+ecrire " l'annee est bissextille"
+sinon 
+ecrire "l'annee n'est pas bissextille"
+fin du si 
+fin du programme

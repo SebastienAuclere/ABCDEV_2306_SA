@@ -1,0 +1,23 @@
+VARIABLE
+	Somme est un réel
+	NbrMagasin est un entier
+
+DEBUT PROGRAMME
+		
+	NbrMagasin <-- 0
+	ECRIRE "Saisissez la somme dont dispose Barnabé : "
+	LIRE <-- Somme
+	DEBUT SI Somme >= 1
+		ALORS
+		DEBUT TANT QUE Somme > 0
+			DEBUT SI Somme - (Somme / 2 + 1) >= 0
+			ALORS
+				Somme <-- Somme - ((Somme / 2 ) + 1)
+			SINON
+				Somme <-- 0
+			FIN SI
+			NbrMagasin <-- NbrMagasin + 1
+		FIN TANT QUE
+	FIN SI
+	ECRIRE "Barnabé est allé dans ", NbrMagasin, " magasin(s)."
+FIN PROGRAMME

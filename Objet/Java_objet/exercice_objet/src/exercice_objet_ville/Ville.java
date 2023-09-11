@@ -25,9 +25,9 @@ public class Ville {
 		nomPays = _NomPays;
 		nbHabitants = _nbre;
 	}
-	public String getNom() 
+	public String getNomVille() 
 	{
-	return nomVille;	
+	return nomVille;
 	}
 	public String getNomPays() 
 	{
@@ -37,7 +37,7 @@ public class Ville {
 	{
 	return nbHabitants;	
 	}
-	public void setNom(String _Nom)
+	public void setNomVille(String _Nom)
 	{
 	nomVille = _Nom;	
 	}

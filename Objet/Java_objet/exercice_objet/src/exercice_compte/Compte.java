@@ -3,41 +3,69 @@ package exercice_compte;
 public class Compte 
 {
 //Declaration des variables
-	public String numeroDeCompte;
 	public double solde;
-	public int creditMax;
-	public int debitMin;
-	public boolean estSoldeMax;
-	public boolean estSoldeMin;
+	public final int soldeMax;
+	public final int soldeMin;
+	//public boolean estSoldeMax;
+	//public boolean estSoldeMin;
+	//public double valeurAjoutee;
 	
 //Declaration du constructeur par defaut
 	public Compte() 
 		{
-			numeroDeCompte = "515Z";
 			solde = 500;
-			creditMax = 10_000;
-			debitMin = -100;
-			estSoldeMax = false;
-			estSoldeMin = false;
+			soldeMax = 10_000;
+			soldeMin = -100;
+			//estSoldeMax = false;
+			//estSoldeMin = false;
+			//valeurAjoutee = 0;
 //Declaration du constructeur avec parametres		
 		}
-	public Compte(String _NumeroDeCompte,double _Solde,int _CreditMax,int _DebitMin,boolean _EstSoldeMax,boolean _EstSoldeMin) 
+	public Compte(double _Solde,int _SoldeMax,int _SoldeMin) 
 		{
 			System.out.println("Création d'un objet compte ");
-			numeroDeCompte = _NumeroDeCompte;
-			solde = _Solde;
-			creditMax = _CreditMax;
-			debitMin = _DebitMin;
-			estSoldeMax = _EstSoldeMax;
-			estSoldeMin = _EstSoldeMin;
+			this.solde = _Solde;
+			this.soldeMax = _SoldeMax;
+			this.soldeMin = _SoldeMin;
+			//this.estSoldeMax = _EstSoldeMax;
+			//this.estSoldeMin = _EstSoldeMin;
+			//this.valeurAjoutee = _ValeurAjoutee;
 		}
-	public String afficher() 
-		{
-		if(numeroDeCompte == "515Z")
+	public boolean afficher() 
 		{
 			System.out.println(solde);
+			return true;
 		}
+	public boolean deposer(double _ValeurAjoutee)
+		{
+			if(this.solde + _ValeurAjoutee <= this.soldeMax && _ValeurAjoutee > 0)
+			{
+				this.solde += _ValeurAjoutee;
+				System.out.println(" Le nouveau solde est: " + this.solde);
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+
 		}
+	public boolean retirer(double _ValeurAjoutee)
+	{
+		if(this.solde + _ValeurAjoutee >= this.soldeMin && _ValeurAjoutee < 0)
+		{
+			this.solde += _ValeurAjoutee;
+			System.out.println(" Le nouveau solde est: " + this.solde);
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+
+	}
+	
+		
 	
 }
     

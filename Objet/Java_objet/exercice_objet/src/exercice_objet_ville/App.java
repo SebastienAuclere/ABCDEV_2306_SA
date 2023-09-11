@@ -5,7 +5,7 @@ public class App {
 	public static void main(String[] args) {
 		
 		Ville ville = new Ville();
-		Ville ville1 = new Ville("Marseille", 870321, "France");
+		Ville ville1 = new Ville("Marseille", 870321, "Toto");
 		Ville ville2 = new Ville("Mulhouse", 108038, "France");
 		
 		System.out.println("\nville = "+ville.getNomVille()+" ville de "+ville.getNbHabitants()

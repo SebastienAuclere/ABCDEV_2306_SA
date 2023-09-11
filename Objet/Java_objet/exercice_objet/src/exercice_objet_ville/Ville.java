@@ -24,7 +24,13 @@ public class Ville {
 		nomVille = _Nom;
 		nomPays = _NomPays;
 		nbHabitants = _nbre;
-	}
+	}   
+	
+	
+	
+	
+	
+	
 	public String getNomVille() 
 	{
 	return nomVille;
@@ -49,6 +55,7 @@ public class Ville {
 	{
 	nbHabitants = _NbHabitants;	
 	}
+	
 	
 
 }

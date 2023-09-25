@@ -2,7 +2,7 @@ package exercice_4_geometry;
 
 public class Point {
 
-	//variables
+	//les attributs
 	
 		private double abscisse;
 		private double ordonnee;
@@ -14,4 +14,15 @@ public class Point {
 			this.abscisse = _abscisse;
 			this.ordonnee = _ordonnee;
 		}
+		
+		public double getAbscisse()
+		{
+			return this.abscisse;
+		}
+		public double getOrdonnee()
+		{
+			return this.ordonnee;
+		}
+		
+		
 }

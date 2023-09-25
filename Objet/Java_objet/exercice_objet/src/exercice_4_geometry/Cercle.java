@@ -2,23 +2,23 @@ package exercice_4_geometry;
 
 public class Cercle {
 
-	//variables
+	//les attributs
 	
-	Point centre;
+	private Point centre;
+	
 	private double rayon;
 	private double perimetre;
-	private double surface;
-	private boolean testAppartenance;
-	
+	private double surface;	
 	
 	//constructeur avec parametres
 	
-	public Cercle(double _rayon) {
+	public Cercle(double _rayon,Point _centre) {
 		
 		this.rayon = _rayon;
+		this.centre = _centre;
 	}
 	
-	//methodes
+	//methodes	
 	
 	public double calculerPerimetre() {
 		
@@ -32,13 +32,23 @@ public class Cercle {
 		return surface;
 	}
 	
-	public void testAppartenance() {
+	public void testAppartenance(Point test) {
 		
+			
 		
+		if(Math.sqrt((Math.pow((test.getAbscisse() - centre.getAbscisse()),2)) + (Math.pow((test.getOrdonnee() - centre.getOrdonnee()),2))) <= rayon) {
+			
+			System.out.println("Le point fait parti du cercle");
+		}
+		else {
+			
+			System.out.println("Le point ne fait pas parti du cercle");
+		}		
 	}
 	
 	public void afficher() {
 		
 		System.out.println("Le cercle a une surface de: " + this.calculerSurface() + " cm2 et un perimetre de" + this.calculerPerimetre() + " en cm.");
+		this.testAppartenance(null);
 	}
 }

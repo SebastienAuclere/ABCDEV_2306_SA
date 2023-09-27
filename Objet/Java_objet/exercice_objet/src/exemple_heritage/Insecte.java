@@ -24,4 +24,12 @@ public class Insecte extends Animal {
 	{
 		this.troisPairesDeJambes = _troisPairesDeJambes;
 	}	
+	@Override
+	public String toString()
+	{
+		return "L'insecte" + this.getEspece() + " ,son mode de déplacement : "
+				+ this.getSeDeplaceComment()
+				+ ", sa nourriture est " + this.getNourriture()
+				+ ", son moyen de communication est " + this.getCommuniquePar();
+	}
 }
